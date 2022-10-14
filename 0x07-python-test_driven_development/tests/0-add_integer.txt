@@ -1,0 +1,34 @@
+"""
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1, 2)
+3
+>>> add_integer(100, -2)
+98
+>>> add_integer(2)
+100
+>>> add_integer(100.3, -2)
+98
+>>> add_integer(10.0, 5.0)
+15
+>>> add_integer(2.9, 0.2)
+2
+>>> add_integer('string', 8)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer([2, 1], 8)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(8, 'string')
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer('string', 'another string')
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+"""
